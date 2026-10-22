@@ -10,3 +10,8 @@ h1{
 p{
     color:red;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
