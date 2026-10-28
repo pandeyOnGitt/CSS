@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      
+      .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: "header header header header"
+                              "sidebar title title title"
+                              "sidebar article1 article2 article3"
+                              "sidebar article1 article2 article3"
+                              "footer footer footer footer"
+                              ;
+
+      }
+
+  
+
+      .item {
+        background-color: yellow;
+        /* height: 100px; 
+        width: 100px; */
+        border: 2px solid orange;
+        /* border-radius: 50%; */
+        /* border: 2px solid green; */
+        /* box-shadow: 0px 0px 20px 10px rgb(228, 68, 15); */
+      }
+
+      
+      .item1 {
+        grid-area: header;
+        background-color: bisque;
+      }
+      .item2 {
+        grid-area: sidebar;
+        background-color: aqua;
+      }
+      .item3 {
+        grid-area: title;
+        background-color: blueviolet;
+      }
+      .item4 {
+        grid-area: article1;
+        background-color: darkcyan;
+      }
+
+      .item5{
+        grid-area: article2;
+      }
+      .item6{
+        grid-area: article3;
+      }
+      .item7{
+        grid-area: footer;
+      }
+
+      /* @media screen and (min-width: 200px) {
+        .item3 {
+          background-color: brown;
+        }
+      } */
+
+      /* @media screen and (min-width: 800px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+          grid-template-rows: 80px 30px 100px;
+          grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+          gap: 10px;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="col-md-12 clearfix">
+                                                                <div id="ContentPlaceHolder1_pnlhidGrid">
+	
+                                                                    <div class="table-responsive">
+                                                                        <div>
+		<table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_grdAttendanceDetails" style="border-collapse:collapse;">
+			<tbody><tr>
+				<th class="text-center" scope="col">Sr.No.</th><th class="text-center" scope="col"><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grdAttendanceDetails','Sort$Student No_')">Student ID</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grdAttendanceDetails','Sort$Student Name')">Name</a></th><th class="text-center" scope="col">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkboxSelectAll" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl01$chkboxSelectAll" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl01$chkboxSelectAll\',\'\')', 0)"></span>&nbsp;&nbsp;Present All
+                                                                                    </th><th class="text-center" scope="col">Remarks</th>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    1
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_0">BTAI2026001</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_0">AMARJEET </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl02$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_0" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_0" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl02$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl02$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl02$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_0" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    2
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_1">BTAI2026002</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_1">ASHISH KAMBOJ</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl03$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_1" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_1" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl03$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl03$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl03$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_1" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    3
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_2">BTAI2026003</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_2">ANUBHAV SINGH KUSHWAHA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl04$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_2" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_2" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl04$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl04$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl04$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_2" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    4
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_3">BTAI2026004</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_3">KIRAN DEEP  KAUR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl05$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_3" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_3" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl05$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl05$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl05$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_3" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    5
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_4">BTAI2026005</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_4">ARUN MAURYA </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl06$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_4" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_4" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl06$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl06$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl06$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_4" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    6
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_5">BTAI2026006</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_5">EKANSH SINGH</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl07$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_5" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_5" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl07$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl07$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl07$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_5" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    7
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_6">BTAI2026007</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_6">AADARSH SINGH</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl08$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_6" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_6" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl08$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl08$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl08$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_6" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    8
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_7">BTAI2026008</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_7">MEHAK VERMA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl09$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_7" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_7" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl09$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl09$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl09$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_7" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    9
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_8">BTAI2026010</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_8">SONU MAURYA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl10$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_8" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_8" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl10$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl10$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl10$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_8" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    10
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_9">BTAI2026011</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_9">LOKESH KUMAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl11$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_9" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_9" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl11$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl11$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl11$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_9" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    11
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_10">BTAI2026012</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_10">RIDDHI YADAV</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl12$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_10" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_10" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl12$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl12$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl12$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_10" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    12
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_11">BTAI2026013</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_11">SKAND TIWARI</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl13$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_11" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_11" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl13$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl13$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl13$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_11" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    13
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_12">BTAI2026014</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_12">MD AFROZ ALAM</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl14$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_12" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_12" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl14$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl14$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl14$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_12" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    14
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_13">BTAI2026015</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_13">GAUTAM SINGH</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl15$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_13" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_13" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl15$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl15$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl15$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_13" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    15
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_14">BTAI2026016</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_14">ANUJ KUMAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl16$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_14" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_14" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl16$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl16$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl16$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_14" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    16
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_15">BTAI2026017</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_15">JATIN KUMAR </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl17$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_15" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_15" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl17$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl17$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl17$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_15" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    17
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_16">BTAI2026019</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_16">JITIN GANGWAR </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl18$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_16" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_16" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl18$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl18$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl18$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_16" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    18
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_17">BTAI2026020</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_17">KESHAV PRATAP SINGH</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl19$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_17" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_17" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl19$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl19$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl19$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_17" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    19
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_18">BTAI2026021</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_18">AVIKA VARSHNEY</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl20$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_18" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_18" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl20$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl20$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl20$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_18" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    20
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_19">BTAI2026022</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_19">HARSH KANDPAL</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl21$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_19" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_19" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl21$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl21$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl21$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_19" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    21
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_20">BTAI2026023</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_20">DAKSH PATEL</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl22$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_20" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_20" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl22$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl22$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl22$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_20" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    22
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_21">BTAI2026024</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_21">ANSHU PATEL</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl23$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_21" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_21" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl23$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl23$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl23$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_21" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    23
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_22">BTAI2026026</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_22">PRIYANSH MISHRA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl24$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_22" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_22" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl24$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl24$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl24$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_22" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    24
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_23">BTAI2026027</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_23">ADITYA KRISHNA SHARMA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl25$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_23" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_23" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl25$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl25$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl25$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_23" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    25
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_24">BTAI2026028</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_24">SUDHANSHU KUMAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl26$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_24" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_24" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl26$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl26$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl26$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_24" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    26
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_25">BTAI2026029</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_25">ANUJ PRAJAPATI</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl27$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_25" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_25" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl27$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl27$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl27$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_25" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    27
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_26">BTAI2026030</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_26">MOHD ANAS</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl28$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_26" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_26" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl28$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl28$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl28$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_26" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    28
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_27">BTAI2026031</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_27">PARTH CHITRANSH</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl29$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_27" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_27" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl29$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl29$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl29$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_27" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    29
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_28">BTAI2026032</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_28">RAKSHIT</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl30$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_28" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_28" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl30$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl30$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl30$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_28" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    30
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_29">BTAI2026034</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_29">ANSHUL SAXENA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl31$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_29" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_29" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl31$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl31$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl31$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_29" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    31
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_30">BTAI2026035</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_30">SPARSH SAXENA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl32$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_30" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_30" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl32$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl32$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl32$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_30" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    32
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_31">BTAI2026036</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_31">RAMJI BHADAURIA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl33$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_31" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_31" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl33$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl33$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl33$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_31" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    33
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_32">BTAI2026037</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_32">DEV</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl34$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_32" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_32" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl34$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl34$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl34$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_32" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    34
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_33">BTAI2026038</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_33">MYRA KHAN</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl35$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_33" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_33" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl35$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl35$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl35$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_33" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    35
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_34">BTAI2026039</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_34">VIKAS</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl36$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_34" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_34" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl36$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl36$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl36$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_34" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    36
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_35">BTAI2026040</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_35">BHOOMIKA MEHROTRA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl37$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_35" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_35" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl37$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl37$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl37$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_35" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    37
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_36">BTAI2026041</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_36">PRANSHI MISHRA </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl38$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_36" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_36" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl38$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl38$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl38$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_36" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    38
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_37">BTAI2026042</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_37">MOHAMMAD DAWAR KHAN</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl39$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_37" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_37" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl39$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl39$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl39$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_37" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    39
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_38">BTAI2026043</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_38">SANDEEP</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl40$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_38" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_38" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl40$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl40$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl40$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_38" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    40
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_39">BTAI2026045</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_39">ALMAZ</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl41$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_39" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_39" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl41$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl41$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl41$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_39" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    41
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_40">BTAI2026046</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_40">NIHARIKA </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl42$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_40" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_40" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl42$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl42$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl42$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_40" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    42
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_41">BTAI2026047</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_41">ABDULLAH MURTAZA KHAN</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl43$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_41" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_41" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl43$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl43$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl43$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_41" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    43
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_42">BTAI2026048</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_42">SIDDHANT RAJ </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl44$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_42" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_42" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl44$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl44$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl44$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_42" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    44
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_43">BTAI2026049</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_43">GAURAV GIRI</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl45$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_43" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_43" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl45$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl45$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl45$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_43" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    45
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_44">BTAI2026050</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_44">ARRIMA SINGH</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl46$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_44" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_44" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl46$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl46$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl46$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_44" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    46
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_45">BTAI2026051</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_45">UJJAWAL VERMA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl47$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_45" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_45" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl47$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl47$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl47$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_45" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    47
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_46">BTAI2026052</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_46">ANTESH</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl48$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_46" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_46" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl48$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl48$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl48$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_46" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    48
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_47">BTAI2026053</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_47">HUSSAIN RAZA KHAN </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl49$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_47" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_47" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl49$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl49$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl49$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_47" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    49
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_48">BTAI2026054</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_48">ANANYA SINGH</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl50$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_48" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_48" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl50$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl50$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl50$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_48" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    50
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_49">BTAI2026055</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_49">RISHUL</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl51$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_49" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_49" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl51$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl51$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl51$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_49" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    51
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_50">BTAI2026056</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_50">ANAMI</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl52$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_50" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_50" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl52$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl52$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl52$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_50" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    52
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_51">BTAI2026057</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_51">MOHAMMAD AYAN ALI</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl53$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_51" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_51" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl53$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl53$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl53$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_51" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    53
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_52">BTAI2026058</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_52">ARNAV YADAV</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl54$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_52" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_52" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl54$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl54$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl54$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_52" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    54
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_53">BTAI2026059</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_53">HIMANSHI</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl55$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_53" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_53" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl55$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl55$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl55$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_53" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    55
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_54">BTAI2026060</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_54">NIKKI SAGAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl56$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_54" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_54" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl56$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl56$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl56$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_54" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    56
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_55">BTAI2026061</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_55">DEV KUMAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl57$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_55" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_55" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl57$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl57$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl57$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_55" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    57
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_56">BTAI2026062</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_56">MOHD NAJEEB ANSARI </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl58$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_56" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_56" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl58$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl58$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl58$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_56" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    58
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_57">BTAI2026063</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_57">NEELESH KUMAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl59$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_57" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_57" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl59$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl59$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl59$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_57" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    59
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_58">BTAI2026065</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_58">PRABHJOT KAUR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl60$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_58" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_58" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl60$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl60$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl60$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_58" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    60
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_59">BTAI2026066</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_59">ANUSHKA RATHOUR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl61$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_59" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_59" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl61$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl61$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl61$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_59" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    61
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_60">BTAI2026067</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_60">ESHU MAHESHWARI</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl62$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_60" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_60" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl62$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl62$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl62$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_60" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    62
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_61">BTAI2026068</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_61">MOHD HUZAIFA KHAN </span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl63$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_61" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_61" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl63$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl63$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl63$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_61" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    63
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_62">BTAI2026069</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_62">NITIN PAL</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl64$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_62" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_62" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl64$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl64$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl64$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_62" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    64
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_63">BTAI2026070</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_63">ABHINAV BHARDWAJ</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl65$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_63" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_63" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl65$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl65$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl65$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_63" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    65
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_64">BTAI2026071</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_64">DAYA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl66$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_64" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_64" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl66$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl66$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl66$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_64" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    66
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_65">BTAI2026072</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_65">LAKSHYA GANGWAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl67$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_65" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_65" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl67$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl67$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl67$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_65" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    67
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_66">BTAI2026073</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_66">ILMA ARSHI</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl68$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_66" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_66" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl68$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl68$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl68$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_66" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    68
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_67">BTAI2026079</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_67">PRINCE GUPTA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl69$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_67" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_67" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl69$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl69$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl69$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_67" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    69
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_68">BTAI2026123</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_68">MANYA AGARWAL</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl70$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_68" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_68" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl70$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl70$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl70$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_68" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    70
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_69">BTAI2026128</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_69">RINJHAM BHATIA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl71$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_69" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_69" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl71$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl71$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl71$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_69" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    71
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_70">BTAI2026169</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_70">SAKSHI UPADHYAY</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl72$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_70" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_70" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl72$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl72$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl72$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_70" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    72
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_71">BTAI2026176</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_71">KNOWLEDGE MUDHUMO</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl73$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_71" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_71" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl73$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl73$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl73$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_71" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    73
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_72">BTAI2026177</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_72">SHREYA PANDEY</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl74$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_72" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_72" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl74$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl74$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl74$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_72" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    74
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_73">BTAI2026178</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_73">ANSHUL KUMAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl75$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_73" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_73" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl75$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl75$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl75$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_73" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    75
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_74">BTAI2026179</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_74">ADARSH KUMAR</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl76$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_74" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_74" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl76$chkEmp" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl76$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl76$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_74" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    76
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_75">BTAI2026180</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_75">ANIKET RAJ</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl77$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_75" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_75" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl77$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl77$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl77$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_75" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr><tr>
+				<td align="center" style="width:6%;">
+                                                                                    77
+                                                                                </td><td align="center" style="width:10%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentNo_76">BTAI2026181</span>
+                                                                                    </td><td style="width:20%;">
+                                                                                        <span id="ContentPlaceHolder1_grdAttendanceDetails_grdlblStudentName_76">YUGANK SHARMA</span>
+                                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl78$hflblSrno" id="ContentPlaceHolder1_grdAttendanceDetails_hflblSrno_76" value="1388522">
+                                                                                    </td><td align="center" style="width:10%;">
+                                                                                        <span class="reportgrid"><input id="ContentPlaceHolder1_grdAttendanceDetails_chkEmp_76" type="checkbox" name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl78$chkEmp" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl78$chkEmp\',\'\')', 0)"></span>
+                                                                                    </td><td align="center" style="width:20%;">
+                                                                                        <input name="ctl00$ContentPlaceHolder1$grdAttendanceDetails$ctl78$txtRemark" type="text" maxlength="100" id="ContentPlaceHolder1_grdAttendanceDetails_txtRemark_76" class="form-control" style="min-width: 156px">
+                                                                                    </td>
+			</tr>
+		</tbody></table>
+	</div>
+                                                                    </div>
+                                                                
+</div>
+                                                            </div>
+  </body>
+</html>
