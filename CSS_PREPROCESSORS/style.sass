@@ -1,0 +1,17 @@
+$primary-color: #3498db
+$height:100vh
+
+@mixin center-alignment 
+    display:flex
+    justify-content:center
+    align-items:center
+
+.container
+    @include center-alignment
+    background-color:$primary-color
+    height:$height
+    width:100vw
+
+.nav-elements
+    display:flex
+    flex-direction:

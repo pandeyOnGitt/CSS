@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "bootstrap": "^6.0.0-alpha.1",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^4.3.3"
+  }
+}
